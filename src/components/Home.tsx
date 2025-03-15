@@ -5,8 +5,8 @@ import { throttle } from 'lodash';
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 interface HomeContainerProps {
-    backgroundColor: string;
-    scrollProgress: number;
+    $backgroundColor: string; // Transient Prop
+    $scrollProgress: number; // Transient Prop
 }
 
 const HomeContainer = styled.div<HomeContainerProps>`
@@ -15,7 +15,7 @@ const HomeContainer = styled.div<HomeContainerProps>`
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-color: ${props => props.backgroundColor};
+    background-color: ${props => props.$backgroundColor};
     color: #abb2bf;
     font-size: 10em;
     font-family: 'Roboto Mono', monospace;
@@ -41,20 +41,22 @@ const ScrollNav = styled.div`
 `;
 
 interface TextSectionProps {
-    scrollProgress: number;
+    $scrollProgress: number; // Transient Prop
 }
 
 const TextSection = styled.div<TextSectionProps>`
     font-weight: bold;
-    opacity: ${props => props.scrollProgress};
+    opacity: ${props => props.$scrollProgress};
     transition: opacity 0.5s ease-in-out;
-    flex-direction: column;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap; /* 줄바꿈 방지 */
     font-size: 10vw; /* 화면 너비에 따라 글자 크기 조절 */
+    display: flex; /* flexbox 레이아웃 사용 */
+    flex-direction: column; /* 수직 정렬 */
+    align-items: center; /* 가로축 중앙 정렬 */
 `;
 
 const InfoButton = styled.button`
@@ -74,11 +76,11 @@ const InfoButton = styled.button`
 `;
 
 const Home: React.FC = () => {
-    const [scrollProgresses, setScrollProgresses] = useState<number[]>([0, 0, 0, 0]);
     const sectionRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
     const backgroundColors = '#282c34';
     const [currentIndex, setCurrentIndex] = useState(0); // 현재 섹션 인덱스
     const [isScrolling, setIsScrolling] = useState(false); // 스크롤 중 여부
+    const [scrollProgresses, setScrollProgresses] = useState<number[]>([1, 0, 0, 0]); // 초기 scrollProgresses 설정
 
     // Throttled 스크롤 핸들러
     const throttledScrollHandler = useCallback(
@@ -155,8 +157,10 @@ const Home: React.FC = () => {
     }, [sectionRefs]);
 
     useEffect(() => {
-        // 컴포넌트 마운트 시 페이지를 맨 위로 스크롤
-        window.scrollTo(0, 0);
+        // 컴포넌트 마운트 후 0.1초 뒤에 페이지를 맨 위로 스크롤
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 100);
     }, []);
 
     return (
@@ -165,14 +169,14 @@ const Home: React.FC = () => {
                 <HomeContainer
                     ref={ref}
                     key={index}
-                    backgroundColor={backgroundColors}
-                    scrollProgress={scrollProgresses[index]}
+                    $backgroundColor={backgroundColors}
+                    $scrollProgress={scrollProgresses[index]}
                 >
                     <ScrollNav>
                         Scroll Down
                         <div><FaAngleDoubleDown /></div>
                     </ScrollNav>
-                    <TextSection scrollProgress={scrollProgresses[index]}>
+                    <TextSection $scrollProgress={scrollProgresses[index]}>
                         {index === 0 ? "HELLO👋" : index === 1 ? "I'M HOJUN" : index === 2 ? "== DEVELOPER🧑‍💻" : "AND MORE?"}
                         {index === 3 && <InfoButton>Info</InfoButton>} {/* "AND MORE?" 섹션에서 버튼 표시 */}
                     </TextSection>
