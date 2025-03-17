@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./components/Home.tsx";
-import GlobalStyle from "./styles/GlobalStyle.ts";
 import Header from "./components/Header.tsx";
+import MyInfo from "./components/MyInfo.tsx";
+import GlobalStyle from "./styles/GlobalStyle.ts";
 
 const App: React.FC = () => {
     return (
@@ -9,6 +10,7 @@ const App: React.FC = () => {
             <GlobalStyle />
             <Header />
             <Home />
+            <MyInfo />
         </>
     )
 }
