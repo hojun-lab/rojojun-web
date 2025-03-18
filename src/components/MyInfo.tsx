@@ -15,7 +15,7 @@ const MyInfoContainer = styled.div`
     width: 100vw;
     padding-top: 60px; /* 헤더 높이만큼 paddingTop 설정 */
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 60px);
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -28,7 +28,7 @@ const MyInfoContainer = styled.div`
 `;
 
 const MyInfoText = styled.div`
-    padding-top: 10vh;
+    //padding-top: 3vh;
     font-size: 8vw;
     line-height: 1.2;
     color: #1a1a1a;

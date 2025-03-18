@@ -3,6 +3,7 @@ import Home from "./components/Home.tsx";
 import Header from "./components/Header.tsx";
 import MyInfo from "./components/MyInfo.tsx";
 import GlobalStyle from "./styles/GlobalStyle.ts";
+import Skills from "./components/Skills.tsx";
 
 const App: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
             <Header />
             <Home />
             <MyInfo />
+            <Skills />
         </>
     )
 }
