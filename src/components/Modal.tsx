@@ -11,7 +11,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, reason }) => {
     if (!isOpen) return null;
 
     return (
-        <ModalOverlay onClick={onClose}>
+        <ModalOverlay onClick={(e) => {
+            e.stopPropagation(); // 이벤트 버블링 중단
+            onClose();
+        }}>
             <ModalContent onClick={(e) => e.stopPropagation()}>
                 <CloseButton onClick={onClose}>✖</CloseButton>
                 <h3>상세 설명</h3>

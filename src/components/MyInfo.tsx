@@ -43,12 +43,14 @@ const Subtitle = styled.div`
     color: #1b1b1b;
 `
 
-const ContentContainer = styled.div<ContentContainerProps>`
+const ContentContainer = styled.div.withConfig({
+    shouldForwardProp: (prop) => prop !== "isSmallScreen"
+})<ContentContainerProps>`
     display: flex;
-    justify-content: space-around; /* 요소 간 간격을 균등하게 분배 */
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* 요소가 넘칠 경우 줄바꿈 */
-    flex-direction: ${({ isSmallScreen }) => (isSmallScreen ? "column" : "row")};
+    flex-wrap: wrap;
 
     ${props => !props.isSmallScreen && css`
         justify-content: space-around;
@@ -56,6 +58,7 @@ const ContentContainer = styled.div<ContentContainerProps>`
     `}
 
     ${props => props.isSmallScreen && css`
+        flex-direction: column;
         align-items: stretch;
     `}
 `

@@ -99,7 +99,7 @@ const HomeComponents = ({ message, start, end, button }: HomeTestComponentsProps
         <ParentContainer ref={containerRef}>
             <ScrollContainer color={message} $isVisible={isVisible}>
                 <p style={{ fontSize: fontSize + 'vw' }}>{message}</p>
-                {button && <Button>Click Me</Button>}
+                {button && <Button onClick={() => alert('클릭이벤트 구현 중...')}>Click Me</Button>}
             </ScrollContainer>
         </ParentContainer>
     );

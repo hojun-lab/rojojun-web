@@ -169,6 +169,7 @@ const Skills = () => {
                         )}
                     </ContentContainer>
                 </SkillContainer>
+                <button onClick={() => alert('test')}></button>
             </MyInfoContainer>
         </>
     )
