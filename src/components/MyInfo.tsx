@@ -45,10 +45,10 @@ const Subtitle = styled.div`
 
 const ContentContainer = styled.div<ContentContainerProps>`
     display: flex;
-    flex-direction: row;
     justify-content: space-around; /* 요소 간 간격을 균등하게 분배 */
     align-items: center;
     flex-wrap: wrap; /* 요소가 넘칠 경우 줄바꿈 */
+    flex-direction: ${({ isSmallScreen }) => (isSmallScreen ? "column" : "row")};
 
     ${props => !props.isSmallScreen && css`
         justify-content: space-around;
@@ -56,7 +56,6 @@ const ContentContainer = styled.div<ContentContainerProps>`
     `}
 
     ${props => props.isSmallScreen && css`
-        flex-direction: column;
         align-items: stretch;
     `}
 `
