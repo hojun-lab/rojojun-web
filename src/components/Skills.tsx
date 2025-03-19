@@ -51,7 +51,7 @@ const SkillContainer = styled.div`
 `
 
 const langData = [
-    {"lang": "java", "level": "COMPETENT", "reason": "dd", "url": "/src/assets/images/0.png"},
+    {"lang": "java", "level": "COMPETENT", "reason": "실무에서 다수의 프로젝트를 경험하고, JPA 등 관련 기술과 함께 활용 가능", "url": "/src/assets/images/0.png"},
     {"lang": "javascript", "level": level[1], "reason": "dd", "url": "/src/assets/images/1.png"},
     {"lang": "typescript", "level": level[1], "reason": "dd", "url": "/src/assets/images/2.png"},
     {"lang": "C#", "level": level[0], "reason": "dd", "url": "/src/assets/images/3.png"},
@@ -97,9 +97,10 @@ const Skills = () => {
         <>
             <MyInfoContainer>
                 <div style={{
-                    lineHeight: '1',
+                    lineHeight: '1.2',
                     marginBottom: '10px', paddingTop: '3vh', fontSize: 'clamp(2rem, 6vw, 4rem)' /* 최소 16px, 선호 2vw, 최대 24px */
                 }}>SKILLS
+                    <p style={{fontSize: '14px'}}>프로젝트 진행 & 개인적인 흥미로 공부</p>
                     <hr/>
                 </div>
                 <SkillContainer>
@@ -169,7 +170,6 @@ const Skills = () => {
                         )}
                     </ContentContainer>
                 </SkillContainer>
-                <button onClick={() => alert('test')}></button>
             </MyInfoContainer>
         </>
     )

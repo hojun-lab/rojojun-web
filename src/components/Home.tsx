@@ -15,6 +15,7 @@ const IntroContainer = styled.div<{ $opacity: number }>`
     opacity: ${(props) => props.$opacity};
     transition: opacity 0.5s ease-in-out;
     z-index: 10;
+    pointer-events: none; /* 이 줄을 추가하세요 */
 `;
 
 const IntroText = styled.p`
@@ -47,7 +48,7 @@ const Home: React.FC = () => {
 
     return (
         <div style={{ height: window.innerHeight * 7 }}>
-            {/* 초기 안내 메시지 */}
+             초기 안내 메시지
             <IntroContainer $opacity={introOpacity}>
                 <IntroText>스크롤 해주세요 ⬇</IntroText>
             </IntroContainer>

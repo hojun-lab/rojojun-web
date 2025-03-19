@@ -4,6 +4,7 @@ import Header from "./components/Header.tsx";
 import MyInfo from "./components/MyInfo.tsx";
 import GlobalStyle from "./styles/GlobalStyle.ts";
 import Skills from "./components/Skills.tsx";
+import MyProjects from "./components/MyProjects.tsx";
 
 const App: React.FC = () => {
     return (
@@ -13,6 +14,8 @@ const App: React.FC = () => {
             <Home />
             <MyInfo />
             <Skills />
+            <MyProjects />
+            {/*<Contact />*/}
         </>
     )
 }
