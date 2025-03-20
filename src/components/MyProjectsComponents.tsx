@@ -148,8 +148,8 @@ const MyProjectsComponents = (props: MyProjProps) => {
                 <InfoRow>
                     <Label><p>주요 작업</p></Label>
                     <Value>
-                        {props.task.map((index) => {
-                            return <p key={index}>{index}</p>
+                        {props.task.map((data, index) => {
+                            return <p key={index}>{data}</p>
                         })}
                         {/*<p>{props.task</p></Value>*/}
                     </Value>

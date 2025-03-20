@@ -31,7 +31,7 @@ const MyProjects = () => {
     const totalProjects = projects.length;
 
     return (
-        <ProjectContainer>
+        <ProjectContainer id="projects">
             <div style={{
                 lineHeight: '1',
                 marginBottom: '10px', paddingTop: '3vh', fontSize: 'clamp(2rem, 6vw, 4rem)' /* 최소 16px, 선호 2vw, 최대 24px */

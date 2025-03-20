@@ -109,7 +109,7 @@ const MyInfo: React.FC = () => {
     }, []);
 
     return (
-        <MyInfoContainer>
+        <MyInfoContainer id="about">
             <MyInfoText>INFO</MyInfoText>
             <Subtitle>실용적 배움을 바탕으로 조직과 함께 발전하는 개발자</Subtitle>
             <ContentContainer isSmallScreen={isSmallScreen}>
