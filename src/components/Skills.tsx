@@ -51,45 +51,45 @@ const SkillContainer = styled.div`
 `
 
 const langData = [
-    {"lang": "java", "level": "COMPETENT", "reason": "실무에서 다수의 프로젝트를 경험하고, JPA 등 관련 기술과 함께 활용 가능", "url": "/src/assets/images/0.png"},
-    {"lang": "javascript", "level": level[1], "reason": "dd", "url": "/src/assets/images/1.png"},
-    {"lang": "typescript", "level": level[1], "reason": "dd", "url": "/src/assets/images/2.png"},
-    {"lang": "C#", "level": level[0], "reason": "dd", "url": "/src/assets/images/3.png"},
-    {"lang": "kotiln", "level": level[1], "reason": "dd", "url": "/src/assets/images/4.png"},
-    {"lang": "python", "level": level[0], "reason": "dd", "url": "/src/assets/images/5.png"},
-    {"lang": "Go", "level": level[0], "reason": "dd", "url": "/src/assets/images/6.png"},
+    {"lang": "java", "level": "COMPETENT", "reason": "자바 : 실무에서 다수의 프로젝트를 경험하고, JPA 등 관련 기술과 함께 활용 가능", "url": "/src/assets/images/0.png"},
+    {"lang": "javascript", "level": level[1], "reason": "자바스크립트 : 간단한 프론트엔드 개발 가능, 복잡한 비동기 처리나 최적화는 추가 학습 필요", "url": "/src/assets/images/1.png"},
+    {"lang": "typescript", "level": level[1], "reason": "타입스크립트 : JS 기으로 프로젝트를 수행해봤지만, 깊이 있는 타입 시스템 활용 경험 부족", "url": "/src/assets/images/2.png"},
+    {"lang": "C#", "level": level[0], "reason": "C# : 기본 문법은 알고 있지만, 실무 경험은 없음", "url": "/src/assets/images/3.png"},
+    {"lang": "kotiln", "level": level[1], "reason": "코틀린 : 자바 기반으로 활용가능하지만, 코루틴과 같은 고급 기능은 사용 경험 부족", "url": "/src/assets/images/4.png"},
+    {"lang": "python", "level": level[0], "reason": "파이썬 : 간단한 스크립트 작성 가능하지만, 대규모 프로젝트 경험 부족", "url": "/src/assets/images/5.png"},
+    {"lang": "Go", "level": level[0], "reason": "Go : 기본적인 문법 숙지, 실무 사용 경험 부족", "url": "/src/assets/images/6.png"},
 ]
 
 const frameworkData = [
-    {"lang": "springboot", "level": level[2], "reason": "dd", "url": "/src/assets/images/springboot.png"},
-    {"lang": "React", "level": level[0], "reason": "dd", "url": "/src/assets/images/react.png"},
-    {"lang": "express.js", "level": level[1], "reason": "dd", "url": "/src/assets/images/express.png"},
-    {"lang": "typeORM", "level": level[1], "reason": "dd", "url": "/src/assets/images/typeORM.png"},
-    {"lang": "spring data jpa", "level": level[2], "reason": "dd", "url": "/src/assets/images/spring-data.png"},
-    {"lang": "hibernate", "level": level[2], "reason": "dd", "url": "/src/assets/images/hibernate.png"},
-    {"lang": "queryDSL", "level": level[3], "reason": "dd", "url": "/src/assets/images/queryDSL.png"},
-    {"lang": "spring security", "level": level[1], "reason": "dd", "url": "/src/assets/images/springsecurity.png"},
-    {"lang": "junit5", "level": level[3], "reason": "dd", "url": "/src/assets/images/junit5-logo.png"}
+    {"lang": "springboot", "level": level[2], "reason": "여러 프로젝트에서 활용, API 개발 및 설정 최적화 가능", "url": "/src/assets/images/springboot.png"},
+    {"lang": "React", "level": level[0], "reason": "기본적인 컴포넌트 작성 가능하지만, 상태 관리 및 최적화 경험 부족", "url": "/src/assets/images/react.png"},
+    {"lang": "express.js", "level": level[1], "reason": "간단한 API 서버 개발 가능하지만, 확장성과 보안 고려 부족", "url": "/src/assets/images/express.png"},
+    {"lang": "typeORM", "level": level[1], "reason": "기본적인 ORM 사용 가능하지만, 고급 설정 경험 부족", "url": "/src/assets/images/typeORM.png"},
+    {"lang": "spring data jpa", "level": level[2], "reason": "JPA와 함께 실무 적용 겸험, 복잡한 QueryDSL 활용 가능", "url": "/src/assets/images/spring-data.png"},
+    {"lang": "hibernate", "level": level[2], "reason": "JPA 내부 동작을 이해하고, 성능 최적화 경험 있음", "url": "/src/assets/images/hibernate.png"},
+    {"lang": "queryDSL", "level": level[3], "reason": "복잡한 동적 쿼리 작성 가능, 실제 프로젝트에서 최적화 경험 있음", "url": "/src/assets/images/queryDSL.png"},
+    {"lang": "spring security", "level": level[1], "reason": "기본적인 인증/인가 구현 가능하지만, OAuth 등 심화 학습 필요", "url": "/src/assets/images/springsecurity.png"},
+    {"lang": "junit5", "level": level[3], "reason": "단위 테스트 및 Mocking 능숙, CI/CD에 적용 가능", "url": "/src/assets/images/junit5-logo.png"}
 ]
 
 const DBData = [
-    {"lang": "MySQL", "level": level[2], "reason": "dd", url: "/src/assets/images/MySQL.png"},
-    {"lang": "MongoDB", "level": level[1], "reason": "dd", url: "/src/assets/images/mongodb.png"},
-    {"lang": "REDIS", "level": level[1], "reason": "dd", url: "/src/assets/images/Redis-Logo.png"},
-    {"lang": "postgreSQL", "level": level[0], "reason": "dd", url: "/src/assets/images/PostgreSQL.png"},
+    {"lang": "MySQL", "level": level[2], "reason": "스키마 설계, 인덱스 최적화 경험 있음", url: "/src/assets/images/MySQL.png"},
+    {"lang": "MongoDB", "level": level[1], "reason": "NoSQL 이해 가능하지만, 대규모 트랜잭션 경험 부족", url: "/src/assets/images/mongodb.png"},
+    {"lang": "REDIS", "level": level[1], "reason": "기본적인 캐싱 적용 가능, 고급 활용 (Pub/Sub 등) 미흡", url: "/src/assets/images/Redis-Logo.png"},
+    {"lang": "postgreSQL", "level": level[0], "reason": "기본적인 CRUD 가능, 고급 기능 활용 부족", url: "/src/assets/images/PostgreSQL.png"},
 ]
 
 const DocData = [
-    {"lang": "Notion", "level": level[2], "reason": "dd", url: "/src/assets/images/Notion.png"},
-    {"lang": "Mermaid.js", "level": level[3], "reason": "dd", url: "/src/assets/images/Mermaid.png"},
+    {"lang": "Notion", "level": level[2], "reason": "문서 정리 및 협업 경험 다수", url: "/src/assets/images/Notion.png"},
+    {"lang": "Mermaid.js", "level": level[3], "reason": "다양한 다이어그램 활용", url: "/src/assets/images/Mermaid.png"},
 ]
 
 const DepolyMent = [
-    {"lang": "AWS", "level": level[2], "reason": "dd", url: "/src/assets/images/aws.png"},
-    {"lang": "Linux", "level": level[1], "reason": "dd", url: "/src/assets/images/linux.png"},
-    {"lang": "Git", "level": level[2], "reason": "dd", url: "/src/assets/images/git.png"},
-    {"lang": "GitHubActions", "level": level[1], "reason": "dd", url: "/src/assets/images/githubactions.png"},
-    {"lang": "gradle", "level": level[0], "reason": "dd", url: "/src/assets/images/gradle.png"},
+    {"lang": "AWS", "level": level[2], "reason": "EC2, S3, Lambda 등 기본적인 클라우드 인프라 구성 가능", url: "/src/assets/images/aws.png"},
+    {"lang": "Linux", "level": level[1], "reason": "터미널 명령어 및 기본적인 서버 관리 가능, 보안 및 최적화 추가 학습 필요", url: "/src/assets/images/linux.png"},
+    {"lang": "Git", "level": level[2], "reason": "브랜치 전략 및 협업 경험 다수, CI/CD 연동 경험 있음", url: "/src/assets/images/git.png"},
+    {"lang": "GitHubActions", "level": level[1], "reason": "간단한 배포 파이프라인 구성 가능, 고급 기능 활용 부족", url: "/src/assets/images/githubactions.png"},
+    {"lang": "gradle", "level": level[0], "reason": "기본적인 빌드 스크립트 작성 가능, 커스텀 태스크 작성 경험 부족", url: "/src/assets/images/gradle.png"},
 ]
 
 const Skills = () => {
