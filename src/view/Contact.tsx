@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ContractComponent from "./ContractComponent.tsx";
+import ContractComponent from "../components/ContractComponent.tsx";
 
 const ContactContainer = styled.div`
     width: 100vw;

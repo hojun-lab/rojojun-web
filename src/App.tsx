@@ -1,10 +1,11 @@
 import React from "react";
-import Home from "./components/Home.tsx";
-import Header from "./components/Header.tsx";
-import MyInfo from "./components/MyInfo.tsx";
 import GlobalStyle from "./styles/GlobalStyle.ts";
-import Skills from "./components/Skills.tsx";
-import MyProjects from "./components/MyProjects.tsx";
+import Header from "./view/Header.tsx";
+import Home from "./view/Home.tsx";
+import MyInfo from "./view/MyInfo.tsx";
+import Skills from "./view/Skills.tsx";
+import MyProjects from "./view/MyProjects.tsx";
+import Career from "./view/Career.tsx";
 
 const App: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
             <MyInfo />
             <Skills />
             <MyProjects />
+            <Career />
             {/*<Contact />*/}
         </>
     )

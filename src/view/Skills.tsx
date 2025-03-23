@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SkillComponents from "./SkillComponents.tsx";
+import SkillComponents from "../components/SkillComponents.tsx";
 
 const MyInfoContainer = styled.div`
     padding-top: 60px; /* 헤더 높이만큼 paddingTop 설정 */

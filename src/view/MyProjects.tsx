@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
-import MyProjectsComponents from "./MyProjectsComponents.tsx";
 import projects from "../data/projects.ts";
+import MyProjectsComponents from "../components/MyProjectsComponents.tsx";
 
 const ProjectContainer = styled.div`
     padding-top: 60px; /* 헤더 높이만큼 paddingTop 설정 */

@@ -91,6 +91,17 @@ const ContentBox = styled.div`
     }
 `;
 
+const GitEmoji = styled.div`
+    background-image: url("/public/git.png");
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+`
+
 
 const MyInfo: React.FC = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -126,8 +137,10 @@ const MyInfo: React.FC = () => {
                 <ContentBox>
                     <Content fontSize={"22px"}>Contact</Content>
                 <hr style={{ border: "1px solid #808080", width: "50px" }} />
-                    <Content fontSize={"16px"}>http://github.com/rojojun</Content>
-                    <Content fontSize={"16px"}>zoloman316@gmail.com</Content>
+                    <Content fontSize={"16px"}>http://github.com/rojojun
+                        <GitEmoji></GitEmoji>
+                    </Content>
+                    <Content fontSize={"16px"}>zoloman316@gmail.com 📨</Content>
                 </ContentBox>
             </ContentContainer>
         </MyInfoContainer>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import HomeComponents from "./HomeComponents.tsx";
 import styled from "styled-components";
+import HomeComponents from "../components/HomeComponents.tsx";
 
 const IntroContainer = styled.div<{ $opacity: number }>`
     width: 100vw;
