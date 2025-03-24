@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import InfoRow from "../styles/InfoRow.ts";
+import Label from "../styles/Label.ts";
+import Value from "../styles/Value.ts";
 
 interface MyProjProps {
     title: string;
@@ -69,24 +72,6 @@ const ProjectInfoBox = styled.div`
         width: 100%; /* 모바일에서는 ProjectBox에 꽉 차게 */
     }
 `;
-
-const InfoRow = styled.div`
-    display: flex;
-    margin-bottom: 10px;
-    align-items: flex-start; /* 라벨과 내용 상단 정렬 */
-`;
-
-const Label = styled.div`
-    width: 100px; /* 라벨 영역 너비 고정 */
-    font-weight: bold;
-    margin-right: 10px;
-    text-align: right; /* 라벨 오른쪽 정렬 */
-`;
-
-const Value = styled.div`
-    flex: 1; /* 남은 공간 모두 차지 */
-`;
-
 
 const ProjectBadge = styled.div<BadgeProps>`
     display: inline-block; /* inline-block으로 변경 */

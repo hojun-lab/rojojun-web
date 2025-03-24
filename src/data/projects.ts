@@ -62,7 +62,7 @@ const projects = [
         ]
     },
     {
-        id: 5, title: "AI 디지털 교과서", description: "This is project 6 description.", type: 'ENTERPRISE',
+        id: 5, title: "AI 디지털 교과서", description: "교육부 주관 AI 디지털교과서 사업", type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
         duration: '2024.02 ~ 10 (9개월)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "spring security", "QueryDSL", "Redis", "MySQL", "MongoDB", "TypeScript", "ExpressJS"],
@@ -96,7 +96,8 @@ const projects = [
             "2. TDD를 통한 전체 프로젝트 개발",
             "3. 프론트엔드와 원할한 작업을 위해 ECR을 통한 프라이빗 도커 레포지토리 관리",
             "4. AI 마타 유저 도메인에 대한 이해도 및 기타 불필요한 도메인 제거",
-            "5. AI 마타 라이센스 작업 진행"
+            "5. AI 마타 라이센스 작업 진행",
+            "6. 백엔드 기여도 100%"
         ]
     },
     {
@@ -105,7 +106,9 @@ const projects = [
         duration: '2025.01 ~ (운영 중)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "QueryDSL", "MySQL"],
         task: [
-            " 1.This is project 2 description. ", "This is project 2 description.", "This is project 2 description.", "This is project 2 description.", "This is project 2 description."
+            "1. Http Header에 따라 달라지는 동작 분기 경험",
+            "2. 문제 채점 및 채점 후 개념 계산 등 채점에 관련된 다양한 동작 구현",
+            "3. 서비스 핵심로직에 테스트코드 구현"
         ]
     },
     {
