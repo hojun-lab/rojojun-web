@@ -6,6 +6,7 @@ import MyInfo from "./view/MyInfo.tsx";
 import Skills from "./view/Skills.tsx";
 import MyProjects from "./view/MyProjects.tsx";
 import Career from "./view/Career.tsx";
+import Footer from "./view/Footer.tsx";
 
 const App: React.FC = () => {
     return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
             <Skills />
             <MyProjects />
             <Career />
-            {/*<Contact />*/}
+            <Footer />
         </>
     )
 }

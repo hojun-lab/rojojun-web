@@ -22,6 +22,7 @@ const ComponentContainer = styled.div`
     margin-top: 20px;
     width: 80%;
     max-width: 800px;
+    margin-bottom: 50px;
 `
 
 const ProjectBox = styled.div`
