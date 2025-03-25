@@ -5,6 +5,7 @@ const projects = [
         description: "🐾 우리들의 반려동물 자랑 SNS",
         type: 'PREP',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj1.png',
         duration: '2022.07 ~ 08 (6주)',
         techStack: ["Java", "Spring Boot", "Hibernate", "FFMPEG", "Websocket", "Redis", "MySQL", "AWS"],
         task: [
@@ -22,6 +23,7 @@ const projects = [
         description: "학생의 취약 개념을 진단하는 마타에듀의 서비스",
         type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj2.png',
         duration: '2022.11 ~ (운영 중)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "spring security", "QueryDSL", "flyway", "Redis", "MySQL", "MongoDB"],
         task: [
@@ -39,7 +41,8 @@ const projects = [
         description: "스파르타 코딩클럽에서 주최하는 무박 2일 해커톤",
         type: 'HACKATHON',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
-        duration: '2023.02 (무박 2일)',
+        image: '/proj3.png',
+        duration: '2023.07 (무박 2일)',
         techStack: ["TypeScript", "React", "StyledComponent", "Java", "Spring Boot"],
         task: [
             "1. 총4개 중 호랑 에듀 부문 참여 호랑에듀 부문 2등의 성적 기록",
@@ -52,6 +55,7 @@ const projects = [
     {
         id: 4, title: "EBS 초등온 마타수학", description: "EBS 초등 ON에 있는 마타수학 B2C 서비스", type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj4.png',
         duration: '2023.10 ~ (운영 중)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "spring security", "QueryDSL", "Redis", "MySQL"],
         task: [
@@ -64,6 +68,7 @@ const projects = [
     {
         id: 5, title: "AI 디지털 교과서", description: "교육부 주관 AI 디지털교과서 사업", type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj5.png',
         duration: '2024.02 ~ 10 (9개월)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "spring security", "QueryDSL", "Redis", "MySQL", "MongoDB", "TypeScript", "ExpressJS"],
         task: [
@@ -77,18 +82,21 @@ const projects = [
     {
         id: 6, title: "Pickify", description: "Google 주최 Chrome Gemini Nano 활용 해커톤", type: 'HACKATHON',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/pro6.png',
         duration: '2024.12 ~ 25.01 (2주)',
         techStack: ["java", "spring", "jpa", "spring security", "mongoDB", "GCP"],
         task: [
             "1. Google에서 주최하는 글로벌 해커톤 참여",
             "2. Gemini Nano를 이용한 프롬프트 작업",
             "3. 추천 알고리즘 구현",
-            "4. GCP의 기능을 활용한 주요 아키텍쳐 및 추천 URL 분석 구현"
+            "4. GCP의 기능을 활용한 주요 아키텍쳐 및 추천 URL 분석 구현",
+            "5. 프로젝트에 대한 구성 기능에 대해 영어로 PT 준비 발표"
         ]
     },
     {
         id: 7, title: "사내 백오피스 작업", description: "마타에듀 전체 서비스 관리 페이지", type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj7.png',
         duration: '2025.01 ~ (운영 중)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "spring security", "QueryDSL", "Redis", "MySQL"],
         task: [
@@ -103,6 +111,7 @@ const projects = [
     {
         id: 8, title: "AI 마타수학 for 대학", description: "This is project 8 description.", type: 'ENTERPRISE',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj2.png',
         duration: '2025.01 ~ (운영 중)',
         techStack: ["java", "Spring Boot", "Hibernate", "aws", "docker", "Junit5", "QueryDSL", "MySQL"],
         task: [
@@ -114,12 +123,24 @@ const projects = [
     {
         id: 9, title: "픽토리", description: "다양한 직군과 진행한 사이드 프로젝트", type: 'SIDE_PROJECT',
         url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj9.png',
         duration: '2025.02 ~ (운영 중)',
         techStack: ["kotlin", "spring", "hibernate", "aws", "Junit5"],
         task: [
             "1. 각각 다른 분야의 직군들과 협업하여 1차 스크럼을 위해 작업",
             "2. 코틀린을 활용한 사이드 프로젝트 진행 경험",
             "3. 현재까지는 크게 성공한 프로젝트가 아니지만, 실패의 원인과 그 대책을 찾아 다른 프로젝트 진행 예정"]
+    },
+    {
+        id: 10, title: "개인포트폴리오 사이트", description: "나에 대해 간략하게 설명하는 사이트", type: 'PERSONAL',
+        url: 'https://www.notion.so/SNS-d4732501dcb949e88b84e83161beaea3?pvs=4',
+        image: '/proj10.png',
+        duration: '2025.03 ~ (운영 중)',
+        techStack: ["TypeScript", "React", "StyledComponents", "FireBase"],
+        task: [
+            "1. 리액트를 활용한 나의 개인 포트폴리오 사이트",
+            "2. 초급적인 리액트 지식으로 인터렉티브 웹 및 반응형 웹 구현",
+            "3. FireBase를 통한 배포 방식 선택"]
     },
 ];
 

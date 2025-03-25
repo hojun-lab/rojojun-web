@@ -8,6 +8,7 @@ interface MyProjProps {
     description: string;
     type: string;
     url: string;
+    image: string;
     duration: string;
     task: string[];
     techStack: string[];
@@ -53,11 +54,11 @@ const ProjectPreviewBox = styled.div`
     }
 `;
 
-const ProjectPreview = styled.div`
+const ProjectPreview = styled.div<{ bg: string }>`
     width: 100%;
     height: 100%; /* 부모 요소에 꽉 차게 */
     background-color: lightblue;
-    background-image: url('/proj1.png');
+    background-image: url("${props => props.bg}");
     background-repeat: no-repeat;
     background-size: contain; /* contain으로 변경하여 이미지 전체가 보이도록 */
     background-position: center;
@@ -110,7 +111,9 @@ const MyProjectsComponents = (props: MyProjProps) => {
         <h3>{props.description}</h3>
         <ProjectBox>
             <ProjectPreviewBox>
-                <ProjectPreview />
+                <ProjectPreview
+                    bg={props.image}
+                />
             </ProjectPreviewBox>
             <ProjectInfoBox>
                 <InfoRow>

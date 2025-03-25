@@ -47,6 +47,7 @@ const MyProjects = () => {
                     description={currentProject.description}
                     type={currentProject.type}
                     duration={currentProject.duration}
+                    image={currentProject.image}
                     url={currentProject.url}
                     techStack={currentProject.techStack}
                     task={currentProject.task}
