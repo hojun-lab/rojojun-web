@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Roboto Mono', monospace;
+        font-family: "Kanit", sans-serif;
         box-sizing: border-box;
         scroll-behavior: smooth; /* 부드러운 스크롤 */
     }
